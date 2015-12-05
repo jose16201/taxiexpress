@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Origen:</b>
+  <%= @tarifa.sector.calle_origen %>   
+</p>
+<p>
+  <b>Destino:</b>
+  <%= @tarifa.sector.calle_destino %>   
+</p>
+
+<p>
+  <b>Costo tarifa:</b>
+  <%= @tarifa.costo_tarifa %>
+</p>
+
+<%= link_to 'Edit', edit_tarifa_path(@tarifa) %> |
+<%= link_to 'Back', tarifas_path %>

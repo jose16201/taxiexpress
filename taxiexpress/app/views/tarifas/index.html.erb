@@ -1,0 +1,31 @@
+<h1>Lista de Tarifas</h1>
+
+<table>
+  <tr>
+    <th>Distrito Origen</th>
+    <th>Calle Origen</th>
+    <th>Distrito Destino</th>
+    <th>Calle Destino</th>
+    <th>Costo tarifa</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tarifas.each do |tarifa| %>
+  <tr>
+    <td><%= tarifa.sector.distrito_origen %></td>
+    <td><%= tarifa.sector.calle_origen %></td>
+    <td><%= tarifa.sector.distrito_destino %></td>
+    <td><%= tarifa.sector.calle_origen %></td>
+    <td><%= tarifa.costo_tarifa %></td>
+    <td><%= link_to 'Show', tarifa %></td>
+    <td><%= link_to 'Edit', edit_tarifa_path(tarifa) %></td>
+    <td><%= link_to 'Delete', tarifa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tarifa', new_tarifa_path %>

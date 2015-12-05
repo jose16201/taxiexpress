@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Distrito Origen:</b>
+  <%= @sector.distrito_origen %>
+</p>
+
+<p>
+  <b>Distrito Destino:</b>
+  <%= @sector.distrito_destino %>
+</p>
+
+<p>
+  <b>Tarifa:</b>
+  <%= @sector.costo_tarifa %>
+</p>
+
+<%= link_to 'Edit', edit_sector_path(@sector) %> |
+<%= link_to 'Back', sectors_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  distrito_origen: MyString
+  calle_origen: MyString
+  distrito_destino: MyString
+  calle_destino: MyString
+
+two:
+  distrito_origen: MyString
+  calle_origen: MyString
+  distrito_destino: MyString
+  calle_destino: MyString

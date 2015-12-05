@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TaxiExpress</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+ 
+  <%= csrf_meta_tags %>
+
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+
+<body margin: 0;overflow-y: auto;>
+	<div id="main">
+		<div id="logo">
+			<%= image_tag("taxi-express-logo.jpg") %>
+			
+		</div>
+		<header>	      
+	      <nav>
+	        <ul class="lavaLampWithImage" id="lava_menu">
+	          <li class="current"><a href="/servicios#index">home</a></li>
+	          <li><a href="/clientes#index">Clientes</a></li>
+	          <li><a href="/sectors#index">Rutas</a></li>
+	          <li><a href="blog.html">about us</a></li>
+	          <li><a href="contact.php">contact</a></li>
+	        </ul>
+	      </nav>
+	    </header>
+	<div id="site_content">
+		<%= yield %>
+	</div>
+
+	  <footer>      
+      	<p>Copyright &copy; 2015 TaxiExpress Inc. - InnovaSoft All rights reserved | Fuentes de consulta: <a href="http://guides.rubyonrails.org/" target="_blank">Ruby on Rails Guides</a> | Perú</p>
+      </footer>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+body { 
+  font: normal .85em 'Droid Sans', arial, sans-serif;
+ margin: 0;
+overflow-y: auto;
+}
+
+
+#main, header, #logo, nav, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#main { 
+  width: 950px;
+  margin: 0 auto 0 auto;
+}
+
+#logo { 
+  width: 950px;
+  height: 45px;
+  background: #333333;
+  color: #FFFFFF;
+  display: table-cell;
+  vertical-align: middle;
+   padding-left: 5px
+}
+
+header { 
+  width: 950px;
+  height: 70px;
+  background: #f7f7f7;
+  font: normal .85em 'Droid Sans', arial, sans-serif;
+}
+
+#site_content { 
+  width: 950px;
+  height: 470px;
+  overflow: hidden;
+  margin: 4px auto 0 auto;
+  padding: 0;
+
+  border-top: 0;
+  border-bottom: 0;
+   padding-left: 5px
+} 
+
+
+footer { 
+  font: normal .85em 'Droid Sans', arial, sans-serif;
+  width: 950px;
+  height: 30px;
+  padding: 17px 0 5px 0;
+  background: #f2f2f2;
+  padding-left: 5px
+}
+
+.lavaLampWithImage {
+  position: relative;
+  height: 25px;
+  padding: 10px 5px 15px 0;
+  margin: 10px 0 0 0;
+  overflow: hidden;
+  float: right;
+}
+
+.lavaLampWithImage li {
+  float: left;
+  list-style: none;
+}
+
+.lavaLampWithImage li.back {
+  background: #63604F;
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  height: 28px;
+  z-index: 8;
+  position: absolute;
+}
+
+.lavaLampWithImage li a {
+  font: 109% 'Droid Sans', arial, sans-serif;
+  text-decoration: none;
+
+  outline: none;
+  text-align: center;
+  letter-spacing: 0;
+  z-index: 10;
+  display: block;
+  float: left;
+  height: 30px;
+  padding: 6px 9px 0 9px;
+  position: relative;
+  overflow: hidden;
+  margin: auto 10px;    
+}
+
+.lavaLampWithImage li a:hover, .lavaLampWithImage li a:active, .lavaLampWithImage li a:visited {
+  border: none;
+}

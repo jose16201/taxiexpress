@@ -1,0 +1,27 @@
+<%= form_for(@tarifa) do |f| %>
+  <% if @tarifa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tarifa.errors.count, "error") %> prohibited this tarifa from being saved:</h2>
+
+      <ul>
+      <% @tarifa.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <div class="field">
+      <%= f.label :Sector %><br />      
+      <%= f.collection_select :sector_id, Sector.all, :id, :ruta, :prompt => true %>   
+  </div>
+  
+  <div class="field">
+      <%= f.label :costo_tarifa %><br />
+      <%= f.text_field :costo_tarifa %>
+  </div>
+
+  <div class="actions">
+      <%= f.submit %>
+  </div>
+<% end %>

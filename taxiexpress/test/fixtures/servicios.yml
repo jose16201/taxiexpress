@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  horaservicio: 2015-11-29 14:37:01
+  tarifa: 
+  cliente: 
+
+two:
+  horaservicio: 2015-11-29 14:37:01
+  tarifa: 
+  cliente: 

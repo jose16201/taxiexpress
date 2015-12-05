@@ -1,0 +1,27 @@
+<h3>Lista de Servicios</h3>
+
+<table>
+  <tr>
+    <th>Hora</th>
+    <th>Cliente</th>
+    <th>Tarifa</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @servicios.each do |servicio| %>
+  <tr>
+    <td><%= servicio.horaservicio.strftime("%H:%M:%S")%> &nbsp; &nbsp;</td>
+    <td><%= servicio.cliente.fullname%> &nbsp; &nbsp;</td>
+    <td><%= servicio.sector.tarifa%> &nbsp; &nbsp;</td>
+    <td><%= link_to 'Show', servicio %></td>
+    <td><%= link_to 'Edit', edit_servicio_path(servicio) %></td>
+    <td><%= link_to 'Delete', servicio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Servicio', new_servicio_path %>

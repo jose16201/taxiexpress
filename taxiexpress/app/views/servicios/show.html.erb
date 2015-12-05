@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Horaservicio:</b>
+  <%= @servicio.horaservicio %>
+</p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @servicio.cliente.fullname %>
+</p>
+
+<p>
+  <b>Tarifa:</b>
+  <%= @servicio.sector.tarifa %>
+</p>
+
+<p>
+  <b>Referencia:</b>
+  <%= @servicio.referencia %>
+</p>
+
+<%= link_to 'Edit', edit_servicio_path(@servicio) %> |
+<%= link_to 'Back', servicios_path %>
